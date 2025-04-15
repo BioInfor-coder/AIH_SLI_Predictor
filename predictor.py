@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 import argparse
 import pickle
 import numpy as np
@@ -16,13 +14,13 @@ def predict_results(model_path, input_X_path, output_dir):
 
     # Make predictions
     proba = model.predict_proba(train_X)
-    y_scores = np.max(proba, axis=1)  # 最大置信度（score）
-    y_preds = model.classes_[np.argmax(proba, axis=1)]  # 对应预测类别（label）
+    y_scores = np.max(proba, axis=1)  # set max confidence（score）
+    y_preds = model.classes_[np.argmax(proba, axis=1)]  # get label（label）
 
-    # 合并为两列：预测类别 + 置信度
+    # concate confidence and label
     output = np.column_stack((y_preds, y_scores))
 
-    # 保存为TXT文件，列名为 Score 和 Pred
+    # save the concated result into a txt file
     np.savetxt(f'{output_dir}/results.txt', output, fmt='%d\t%.6f', header='Score\tPred', comments='')
 
 # Entry point: use command-line arguments to run the evaluation
