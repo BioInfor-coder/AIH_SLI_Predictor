@@ -4,8 +4,8 @@ A method for predicting severe liver fibrosis in AIH
 
 # Requirements   
 The program needs to rely on the following versions of Python environment and toolkit to run：
-python >=3.7      
-pandas=1.0.1      
+python >=3.7    
+pandas=1.0.1    
 scikit-learn=0.22.1      
 matplotlib=3.1.3        
 
