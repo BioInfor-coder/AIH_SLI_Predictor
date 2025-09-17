@@ -35,12 +35,12 @@ When you input the true label of the data and use evaluator to make predictions,
 Run the following command to use the predictor to predict your own data:
 
   ```
-  $ python predictor --model_path ./weights/RandomForestClassifier_weight.pkl --input_X input_data_dir --output_dir output_dir 
+  $ python predictor --model_path ./weights/updated_RF_model_1.pkl --input_X input_data_dir --output_dir output_dir 
   ```
 
 Run the following command to use the evaluator to predict your own data and evalue the performance of the model if you have the true label of your own data:
 
   ```
-  $ python evaluator --model_path ./weights/RandomForestClassifier_weight.pkl --input_X input_X_dir --input_Y input_Y_dir --output_dir output_dir
+  $ python evaluator --model_path ./weights/updated_RF_model_1.pkl --input_X input_X_dir --input_Y input_Y_dir --output_dir output_dir
   ```
 
