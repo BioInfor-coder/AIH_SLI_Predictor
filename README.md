@@ -15,9 +15,9 @@ The input of the model is a sample storage txt file (inpout_X.txt) containing pr
 demo example as：
     
   ```
-    154.0	1.04	128.0
-    129.0	1.04	140.0
-    78.0	1.33	30.0
+    2.326896551724137	1.07	4.686
+    7.301369863013698	1.25	3.15
+    3.198347107438017	1.1	5.57
   ```
 
 ## Output: 
