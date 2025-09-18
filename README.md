@@ -11,13 +11,13 @@ matplotlib=3.1.3        
 
 # Usage Examples  
 ## Input：
-The input of the model is a sample storage txt file (inpout_X.txt) containing prediction features. Each data in the file is 1X4. The first to fourth columns represent the sample's cell-platelet count, prothrombin international normalized ratio, blood-γ-glutamyl transpeptidase, and gender (0 for female, 1 for male).
+The input of the model is a sample storage txt file (inpout_X.txt) containing prediction features. Each data in the file is 1X3. The first to fourth columns represent the sample's cell-platelet count, prothrombin international normalized ratio, blood-γ-glutamyl transpeptidase, and gender (0 for female, 1 for male).
 demo example as：
     
   ```
-    154.0	1.04	128.0	0.0
-    129.0	1.04	140.0	0.0
-    78.0	1.33	30.0	0.0
+    154.0	1.04	128.0
+    129.0	1.04	140.0
+    78.0	1.33	30.0
   ```
 
 ## Output: 
